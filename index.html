@@ -7,91 +7,89 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Tablemate Robot</h1>
-    <p>Your friendly, smart and expressive desk companion</p>
-  </header>
+  <div class="bg-wrap">
+    <div class="grid"></div>
+    <div class="circuits"></div>
+    <div class="lines"></div>
+  </div>
 
-  <main class="container">
-    <section class="hero">
-      <img src="tablemate1.jpg" alt="Tablemate front">
-      <div class="card" style="max-width:560px;">
-        <h2>About Tablemate</h2>
-        <p>Small, open-hardware robot with an expressive OLED face, sound effects, Wi‑Fi/Bluetooth control (ESP32), and rechargeable battery. Perfect as a desk buddy, reminder device, and a maker's toy.</p>
-        <div class="features">
-          <div class="feature">💡 OLED face — animated eyes & expressions</div>
-          <div class="feature">🔔 Reminders & Timers</div>
-          <div class="feature">🎵 Sound & chimes</div>
-          <div class="feature">📱 Cronos App integration (notifications & automations)</div>
-          <div class="feature">🔋 USB rechargeable battery</div>
-          <div class="feature">🧩 Open for makers — reprogram and customize</div>
+  <div class="container">
+    <header class="header">
+      <div class="site-title">
+        <div class="logo-robot" aria-hidden="true">
+          <div class="robot-eye"></div>
+          <div class="robot-blink"></div>
+        </div>
+        <div style="text-align:left">
+          <h1>🤖 Tablemate Robot</h1>
+          <p style="font-size:13px;margin-top:4px;color:var(--muted)">Your smart table companion</p>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section style="margin-top:20px;">
-      <h2 class="card" style="display:inline-block;padding:10px 16px;border-radius:10px;">Purchase</h2>
-      <div class="card" style="margin-top:12px;">
-        <p>MRP: <del>₹1899</del> <strong style="font-size:20px;color:var(--accent)">₹1234</strong></p>
-        <p><strong>Special Offer:</strong> <span style="background:linear-gradient(90deg,#ffd36b,#ff6b9a);padding:6px 10px;border-radius:8px;color:#001;font-weight:800">Buy Now ₹999 (Limited Offer!)</span></p>
-
-        <div class="qrwrap">
-          <div style="text-align:center">
-            <img src="upi_qr.jpg" alt="UPI QR" style="width:240px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
-            <p style="margin:6px 0 0">Scan to pay via UPI</p>
-            <p style="font-size:0.95rem;margin:4px 0;color:#9ff3e8">UPI ID: shown in QR (SBI / PhonePe)</p>
-          </div>
-          <div style="min-width:280px;text-align:left">
-            <h3>How to order</h3>
-            <ol>
-              <li>Scan the QR above and pay <strong>₹999</strong>.</li>
-              <li>Click the button below to open the order form and upload the payment screenshot (or paste Txn ID).</li>
-              <li>We will verify the payment and contact you to confirm shipping.</li>
-            </ol>
-            <p><a class="buybtn" href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank">🛒 Complete Your Order</a></p>
+    <main>
+      <section class="hero">
+        <img src="tablemate1.jpg" alt="Tablemate">
+        <div class="hero-card">
+          <h2 style="margin-top:0">About Tablemate</h2>
+          <p style="color:var(--muted)">Small, open-hardware robot with an expressive OLED face, sound effects, Wi‑Fi/Bluetooth (ESP32), and rechargeable battery. Perfect as a desk buddy, reminder device, and a maker's toy.</p>
+          <div class="features" style="margin-top:10px">
+            <div class="feature">💡 Animated OLED face</div>
+            <div class="feature">🔔 Reminders & timers</div>
+            <div class="feature">🎵 Sound & chimes</div>
+            <div class="feature">📱 Cronos App integration</div>
+            <div class="feature">🔋 USB rechargeable battery</div>
+            <div class="feature">🧩 Open & programmable</div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section style="margin-top:20px" class="card">
-      <h3>Gallery</h3>
-      <img src="tablemate2.jpg" alt="Tablemate glowing" style="width:300px;height:200px;object-fit:cover;margin-top:10px">
-    </section>
+      <section class="purchase">
+        <div class="card hero-card">
+          <p class="price-old">₹1899</p>
+          <p class="price-now">₹899</p>
+          <span class="offer-badge">Limited Time Offer</span>
+          <div style="margin-top:12px">
+            <a class="buybtn pulse" href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank" role="button">🛒 Buy Now ₹899 (Limited Offer!)</a>
+          </div>
+          <div style="margin-top:12px;color:var(--muted)">Scan UPI QR or pay using the UPI ID shown. After payment, open the order form and upload the payment screenshot or paste the Txn ID.</div>
+        </div>
 
-    <section style="margin-top:18px" class="card">
-      <h3>Contact & Social</h3>
-      <p>DM us on Instagram: <a href="https://www.instagram.com/crazyfpv_s?igsh=MXQzbHB2MjZod3dkZQ%3D%3D&utm_source=qr" target="_blank">@crazyfpv_s</a></p>
-      <p>For bulk orders or questions: <a href="mailto:sales@thefungamentalco.com">sales@thefungamentalco.com</a></p>
-    </section>
+        <div class="card hero-card qr">
+          <img src="upi_qr.jpg" alt="UPI QR">
+          <div style="font-size:14px;color:var(--muted)">Scan to pay ₹899</div>
+          <div style="margin-top:8px"><a class="buybtn" href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank">Open Order Form</a></div>
+        </div>
+      </section>
 
-    <section style="margin-top:18px" class="card admin">
-      <h3>Admin Login</h3>
-      <p>Enter password to reveal admin links:</p>
-      <input type="password" id="pwd" placeholder="Password" style="padding:10px;border-radius:6px;border:none">
-      <button onclick="adminLogin()" style="margin-left:8px;padding:10px 12px;border-radius:6px;border:none;background:#66fcf1;cursor:pointer">Login</button>
-      <div id="adminPanel" style="display:none;margin-top:12px;text-align:left">
-        <p><strong>Orders collected via Google Form.</strong></p>
-        <p><a href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank">Open Order Form (Google)</a></p>
-        <p><a href="thankyou.html" target="_blank">Preview Thank You Page</a></p>
-      </div>
-    </section>
+      <section style="margin-top:18px">
+        <div class="hero-card">
+          <h3 style="margin-top:0">Gallery</h3>
+          <img src="tablemate2.jpg" alt="Tablemate" style="width:100%;max-width:520px;height:260px;object-fit:cover;border-radius:8px;margin-top:8px">
+        </div>
+      </section>
 
-  </main>
+      <section style="margin-top:18px">
+        <div class="hero-card">
+          <h3 style="margin-top:0">Contact & Bulk Orders</h3>
+          <p style="color:var(--muted)">For bulk orders or custom builds, email: <a href="mailto:sagarghatak04@gmail.com">sagarghatak04@gmail.com</a></p>
+          <p style="color:var(--muted)">Follow us: <a href="https://www.instagram.com/crazyfpv_s?igsh=MXQzbHB2MjZod3dkZQ%3D%3D&utm_source=qr" target="_blank">@crazyfpv_s</a></p>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <p>© 2025 Tablemate Robot — Made for makers. Hosted on GitHub Pages.</p>
-  </footer>
+    <footer>
+      <p>© 2025 Tablemate Robot — Made for makers.</p>
+    </footer>
+  </div>
 
-<script>
-function adminLogin(){
-  const p = document.getElementById('pwd').value;
-  if(p === 'sagar007K'){
-    document.getElementById('adminPanel').style.display = 'block';
-  } else {
-    alert('Incorrect password');
-  }
-}
-</script>
+  <script>
+    document.querySelectorAll('.buybtn').forEach(b => {
+      b.addEventListener('click', () => {
+        b.classList.remove('pulse');
+        setTimeout(()=> b.classList.add('pulse'), 80);
+      });
+    });
+  </script>
 </body>
 </html>
