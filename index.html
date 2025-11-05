@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablemate Bot – Your Smart Table Friend</title>
+    <style>
+        body {font-family: Arial, sans-serif; background-color: #0b0c10; color: white; margin: 0; text-align: center;}
+        header {background: linear-gradient(135deg, #00bcd4, #3f51b5); padding: 40px 10px;}
+        header h1 {font-size: 2.5em; margin: 0;}
+        header p {font-size: 1.2em;}
+        section {padding: 40px 20px;}
+        .features {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;}
+        .feature {background: #1f2833; border-radius: 10px; padding: 20px;}
+        img {max-width: 90%; border-radius: 10px;}
+        .buy {background-color: #45a29e; color: white; padding: 15px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 18px;}
+        .buy:hover {background-color: #66fcf1;}
+        .qr {margin: 20px 0;}
+        footer {background: #1f2833; padding: 20px; font-size: 0.9em;}
+        #admin {display:none; padding:20px;}
+        input[type="password"] {padding:10px; font-size:16px; border:none; border-radius:6px;}
+        button {padding:10px 15px; margin-top:10px; font-size:16px; border:none; border-radius:6px; cursor:pointer;}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🤖 Meet Tablemate Bot</h1>
+    <p>Your friendly, smart, and expressive desk companion!</p>
+</header>
+
+<section>
+    <img src="tablemate1.jpg" alt="Tablemate Bot glowing">
+    <h2>About Tablemate</h2>
+    <p>Tablemate is not just a robot — it's your table’s best friend! Built on advanced microcontrollers, Tablemate reacts to sound, shows emotions, and connects with the Cronos App for even smarter control.</p>
+</section>
+
+<section>
+    <h2>✨ Key Features</h2>
+    <div class="features">
+        <div class="feature">💡 Emotion Display with OLED Eyes</div>
+        <div class="feature">🎵 Sound Reactive Expressions</div>
+        <div class="feature">🧠 Cronos App Connectivity for Smart Control</div>
+        <div class="feature">🔔 Timer & Reminder Mode</div>
+        <div class="feature">🌈 Mood Lighting Under Glow</div>
+        <div class="feature">🔊 Speaker-Integrated Voice Effects</div>
+        <div class="feature">🎮 Programmable for Custom Behaviors</div>
+        <div class="feature">🔋 USB-Powered & Portable Design</div>
+    </div>
+</section>
+
+<section>
+    <h2>💰 Get Yours Now</h2>
+    <p><del>₹1899</del> <strong>₹1234 (35% OFF!)</strong></p>
+    <div class="qr">
+        <img src="upi_qr.jpg" alt="UPI QR Code for Payment" width="250">
+    </div>
+    <p>Scan to pay via UPI, then fill the form below 👇</p>
+    <a href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank">
+        <button class="buy">🛒 Complete Your Order</button>
+    </a>
+</section>
+
+<section>
+    <h2>🔐 Admin Login</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+    <div id="admin">
+        <h3>Orders Overview</h3>
+        <p>Orders are collected via Google Form and stored securely.</p>
+        <a href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank" style="color:#66fcf1;">View Order Form</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Tablemate Robotics | Designed by Sagar Ghatak</p>
+</footer>
+
+<script>
+function login() {
+    const pwd = document.getElementById('password').value;
+    if(pwd === 'sagar007K'){
+        document.getElementById('admin').style.display = 'block';
+    } else {
+        alert('Incorrect password!');
+    }
+}
+</script>
+
+</body>
+</html>
