@@ -1,92 +1,97 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablemate Bot – Your Smart Table Friend</title>
-    <style>
-        body {font-family: Arial, sans-serif; background-color: #0b0c10; color: white; margin: 0; text-align: center;}
-        header {background: linear-gradient(135deg, #00bcd4, #3f51b5); padding: 40px 10px;}
-        header h1 {font-size: 2.5em; margin: 0;}
-        header p {font-size: 1.2em;}
-        section {padding: 40px 20px;}
-        .features {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;}
-        .feature {background: #1f2833; border-radius: 10px; padding: 20px;}
-        img {max-width: 90%; border-radius: 10px;}
-        .buy {background-color: #45a29e; color: white; padding: 15px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 18px;}
-        .buy:hover {background-color: #66fcf1;}
-        .qr {margin: 20px 0;}
-        footer {background: #1f2833; padding: 20px; font-size: 0.9em;}
-        #admin {display:none; padding:20px;}
-        input[type="password"] {padding:10px; font-size:16px; border:none; border-radius:6px;}
-        button {padding:10px 15px; margin-top:10px; font-size:16px; border:none; border-radius:6px; cursor:pointer;}
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tablemate Robot — Tiny desk companion</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="header">
+    <h1>Tablemate Robot</h1>
+    <p>Your friendly, smart and expressive desk companion</p>
+  </header>
 
-<header>
-    <h1>🤖 Meet Tablemate Bot</h1>
-    <p>Your friendly, smart, and expressive desk companion!</p>
-</header>
+  <main class="container">
+    <section class="hero">
+      <img src="tablemate1.jpg" alt="Tablemate front">
+      <div class="card" style="max-width:560px;">
+        <h2>About Tablemate</h2>
+        <p>Small, open-hardware robot with an expressive OLED face, sound effects, Wi‑Fi/Bluetooth control (ESP32), and rechargeable battery. Perfect as a desk buddy, reminder device, and a maker's toy.</p>
+        <div class="features">
+          <div class="feature">💡 OLED face — animated eyes & expressions</div>
+          <div class="feature">🔔 Reminders & Timers</div>
+          <div class="feature">🎵 Sound & chimes</div>
+          <div class="feature">📱 Cronos App integration (notifications & automations)</div>
+          <div class="feature">🔋 USB rechargeable battery</div>
+          <div class="feature">🧩 Open for makers — reprogram and customize</div>
+        </div>
+      </div>
+    </section>
 
-<section>
-    <img src="tablemate1.jpg" alt="Tablemate Bot glowing">
-    <h2>About Tablemate</h2>
-    <p>Tablemate is not just a robot — it's your table’s best friend! Built on advanced microcontrollers, Tablemate reacts to sound, shows emotions, and connects with the Cronos App for even smarter control.</p>
-</section>
+    <section style="margin-top:20px;">
+      <h2 class="card" style="display:inline-block;padding:10px 16px;border-radius:10px;">Purchase</h2>
+      <div class="card" style="margin-top:12px;">
+        <p>MRP: <del>₹1899</del> <strong style="font-size:20px;color:var(--accent)">₹1234</strong></p>
+        <p><strong>Special Offer:</strong> <span style="background:linear-gradient(90deg,#ffd36b,#ff6b9a);padding:6px 10px;border-radius:8px;color:#001;font-weight:800">Buy Now ₹999 (Limited Offer!)</span></p>
 
-<section>
-    <h2>✨ Key Features</h2>
-    <div class="features">
-        <div class="feature">💡 Emotion Display with OLED Eyes</div>
-        <div class="feature">🎵 Sound Reactive Expressions</div>
-        <div class="feature">🧠 Cronos App Connectivity for Smart Control</div>
-        <div class="feature">🔔 Timer & Reminder Mode</div>
-        <div class="feature">🌈 Mood Lighting Under Glow</div>
-        <div class="feature">🔊 Speaker-Integrated Voice Effects</div>
-        <div class="feature">🎮 Programmable for Custom Behaviors</div>
-        <div class="feature">🔋 USB-Powered & Portable Design</div>
-    </div>
-</section>
+        <div class="qrwrap">
+          <div style="text-align:center">
+            <img src="upi_qr.jpg" alt="UPI QR" style="width:240px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
+            <p style="margin:6px 0 0">Scan to pay via UPI</p>
+            <p style="font-size:0.95rem;margin:4px 0;color:#9ff3e8">UPI ID: shown in QR (SBI / PhonePe)</p>
+          </div>
+          <div style="min-width:280px;text-align:left">
+            <h3>How to order</h3>
+            <ol>
+              <li>Scan the QR above and pay <strong>₹999</strong>.</li>
+              <li>Click the button below to open the order form and upload the payment screenshot (or paste Txn ID).</li>
+              <li>We will verify the payment and contact you to confirm shipping.</li>
+            </ol>
+            <p><a class="buybtn" href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank">🛒 Complete Your Order</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section>
-    <h2>💰 Get Yours Now</h2>
-    <p><del>₹1899</del> <strong>₹1234 (35% OFF!)</strong></p>
-    <div class="qr">
-        <img src="upi_qr.jpg" alt="UPI QR Code for Payment" width="250">
-    </div>
-    <p>Scan to pay via UPI, then fill the form below 👇</p>
-    <a href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank">
-        <button class="buy">🛒 Complete Your Order</button>
-    </a>
-</section>
+    <section style="margin-top:20px" class="card">
+      <h3>Gallery</h3>
+      <img src="tablemate2.jpg" alt="Tablemate glowing" style="width:300px;height:200px;object-fit:cover;margin-top:10px">
+    </section>
 
-<section>
-    <h2>🔐 Admin Login</h2>
-    <input type="password" id="password" placeholder="Enter password">
-    <button onclick="login()">Login</button>
-    <div id="admin">
-        <h3>Orders Overview</h3>
-        <p>Orders are collected via Google Form and stored securely.</p>
-        <a href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank" style="color:#66fcf1;">View Order Form</a>
-    </div>
-</section>
+    <section style="margin-top:18px" class="card">
+      <h3>Contact & Social</h3>
+      <p>DM us on Instagram: <a href="https://www.instagram.com/crazyfpv_s?igsh=MXQzbHB2MjZod3dkZQ%3D%3D&utm_source=qr" target="_blank">@crazyfpv_s</a></p>
+      <p>For bulk orders or questions: <a href="mailto:sales@thefungamentalco.com">sales@thefungamentalco.com</a></p>
+    </section>
 
-<footer>
-    <p>© 2025 Tablemate Robotics | Designed by Sagar Ghatak</p>
-</footer>
+    <section style="margin-top:18px" class="card admin">
+      <h3>Admin Login</h3>
+      <p>Enter password to reveal admin links:</p>
+      <input type="password" id="pwd" placeholder="Password" style="padding:10px;border-radius:6px;border:none">
+      <button onclick="adminLogin()" style="margin-left:8px;padding:10px 12px;border-radius:6px;border:none;background:#66fcf1;cursor:pointer">Login</button>
+      <div id="adminPanel" style="display:none;margin-top:12px;text-align:left">
+        <p><strong>Orders collected via Google Form.</strong></p>
+        <p><a href="https://forms.gle/BH6GJhoBGyvBZE277" target="_blank">Open Order Form (Google)</a></p>
+        <p><a href="thankyou.html" target="_blank">Preview Thank You Page</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Tablemate Robot — Made for makers. Hosted on GitHub Pages.</p>
+  </footer>
 
 <script>
-function login() {
-    const pwd = document.getElementById('password').value;
-    if(pwd === 'sagar007K'){
-        document.getElementById('admin').style.display = 'block';
-    } else {
-        alert('Incorrect password!');
-    }
+function adminLogin(){
+  const p = document.getElementById('pwd').value;
+  if(p === 'sagar007K'){
+    document.getElementById('adminPanel').style.display = 'block';
+  } else {
+    alert('Incorrect password');
+  }
 }
 </script>
-
 </body>
 </html>
