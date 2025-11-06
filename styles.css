@@ -14,7 +14,7 @@ body {
   position: relative;
 }
 
-/* ===== Background Grid Animation ===== */
+/* ===== Animated Grid Background ===== */
 body::before {
   content: "";
   position: fixed;
@@ -112,6 +112,7 @@ h1 {
   text-shadow: 0 0 20px #00eaff;
 }
 
+/* ===== Glowing BUY Button ===== */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -122,13 +123,19 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   box-shadow: 0 0 25px #00eaff;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s infinite;
 }
 
 .btn:hover {
   background: #0ff;
-  box-shadow: 0 0 40px #00eaff;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 40px #00ffff, 0 0 80px #00eaff;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px #00eaff; }
+  50% { box-shadow: 0 0 40px #00eaff; }
 }
 
 /* ===== Features ===== */
@@ -168,6 +175,17 @@ h1 {
 
 .gallery-grid img:hover {
   transform: scale(1.05);
+}
+
+/* ===== Reels Section ===== */
+.reels {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.reel-gallery {
+  display: none;
+  margin-top: 1.5rem;
 }
 
 /* ===== Contact & Footer ===== */
