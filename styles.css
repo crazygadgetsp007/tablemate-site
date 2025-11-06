@@ -70,9 +70,33 @@ body{
 }
 h1{margin:0;font-size:28px;letter-spacing:.5px}
 .sub{margin:2px 0 0;color:var(--muted);font-size:13px}
+/* === Hero Cover Image === */
+.hero {
+  position: relative;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: url("tablemate7.jpg") center/cover no-repeat;
+  border-radius: 16px;
+  overflow: hidden;
+}
 
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: brightness(0.35) blur(1px);
+  border-radius: inherit;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
 /* hero */
-.hero h2{margin:0 0 6px
+.hero h2{
+   font-size: 2rem;
+  margin-bottom: 12px;
+  margin:0 0 6px
       ont-size: 1.9rem;
   line-height: 1.3;
         }
