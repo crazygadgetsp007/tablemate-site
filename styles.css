@@ -142,6 +142,19 @@ h1{margin:0;font-size:28px;letter-spacing:.5px}
 /* features */
 h3{margin:0 0 8px}
 .features{
+  .features {
+  position: relative;
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("tablemate8.jpg") center/cover no-repeat;
+  opacity: 0.18;
+  border-radius: inherit;
+  pointer-events: none;
+}
   display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:10px;margin:8px 0 0;padding:0;list-style:none
 }
