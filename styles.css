@@ -160,7 +160,7 @@ h3{margin:0 0 8px}
 }
 .features li{
   padding:10px;border:1px solid var(--stroke);border-radius:12px;
-  background:rgba(255,255,255,.03);
+  background:rgba(0,0,0,0.3);
 }
 
 /* gallery with small thumbnails */
